@@ -1,0 +1,1073 @@
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.eot');
+    src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff'),
+         url('fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold-webfont.eot');
+    src: url('fonts/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('fonts/roboto-bold-webfont.woff') format('woff'),
+         url('fonts/roboto-bold-webfont.ttf') format('truetype'),
+         url('fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('fonts/roboto-black-webfont.eot');
+    src: url('fonts/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('fonts/roboto-black-webfont.woff') format('woff'),
+         url('fonts/roboto-black-webfont.ttf') format('truetype'),
+         url('fonts/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto-light-webfont.eot');
+    src: url('fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('fonts/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('fonts/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/roboto-medium-webfont.eot');
+    src: url('fonts/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('fonts/roboto-medium-webfont.woff') format('woff'),
+         url('fonts/roboto-medium-webfont.ttf') format('truetype'),
+         url('fonts/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+/* Body */
+}
+
+body
+{
+	margin:0;
+	width: 100%;
+	min-width: 700px;
+}	
+
+/*header*/
+
+#accueil
+{
+	position: fixed;
+	z-index: 10;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    top: 0px;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#accueil img 
+{
+	width: 100%;
+	height: auto;
+	margin-bottom: 0px;
+}
+
+#accueil nav ul
+{
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	
+}
+
+#accueil nav li
+{
+	padding: 0 20px 0 20px;
+	font-family: robotoregular;
+}
+
+#accueil nav a 
+{
+	font-size: 0.9em;
+    color: #777777;
+    text-decoration: none;
+}
+
+#accueil nav a:hover
+{
+	text-decoration: none; 
+	border-top: 2px solid #45aed6;
+	color: #000000;
+	padding-top: 25px;
+}
+
+#accueil a:focus 
+{
+	border-top:2px solid #45aed6;
+	padding-top: 25px;
+}
+
+/* Banniere*/
+
+#banniere_image
+{
+	background: url("slider/bg1.jpg") center center no-repeat;
+	background-size: cover;
+	height: 480px;
+	width: 100%;
+	margin-top: 100px;
+	overflow: hidden;
+}
+
+#banniere_description
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 140px;
+	margin-left: 150px;
+	width: 40%;
+	height: auto;
+ 	position: absolute;
+	
+}
+
+#banniere_description h1
+{
+	font-family: robotomedium;
+	color: #ffffff;
+	word-wrap: break-word;
+	line-height: normal;
+	margin-bottom: 0px;
+}
+
+#banniere_description h1 strong
+{
+	font-weight: normal;
+	color: #45aed6;
+}
+
+#banniere_description p
+{
+	font-family: robotoregular;
+	color: #ffffff;
+	word-wrap: break-word;
+	font-size: 0.8em;
+	margin-bottom: 30px;
+}
+
+.bouton
+{
+	width: 16px;
+	height: auto;
+	background-color: #45aed6;
+	padding: 8px;
+	border-bottom: 4px solid #318daf;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: robotoregular;
+}
+
+.bouton:hover
+{
+	background-color: #ffffff;
+	color: #45aed6;
+	border-bottom:4px solid #CDE6F0;
+}
+
+#fleche_gauche i 
+{
+	float: left;
+    height: 50px;
+    width: 50px;
+    text-align: right;
+    line-height: 50px;
+    padding-right: 10px;
+    color: #ffffff;
+    position: relative;
+    left: -35px;
+    font-size: 1em;
+    background-color: rgba(27, 26, 26, 0.5);
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    top: 215px;
+	
+}
+
+#fleche_droite i
+{
+	float: right;
+	height: 50px;
+	width: 50px;
+	text-align: left;
+	line-height: 50px;
+	padding-left: 10px;
+	color: #ffffff;
+	position: relative;
+	right: -35px;
+	font-size: 1em;
+	background-color: rgba(27, 26, 26, 0.5);
+	border-top-left-radius :100%; 
+	border-bottom-left-radius: 100%;
+	top: 215px;
+
+}
+
+strong
+{
+	text-decoration: none;
+}
+
+/* Première section*/
+
+#nos_services
+{
+	width: 100%;
+	height: auto;
+
+}
+
+.titres
+{
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px; 
+	margin-bottom: 40px;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.titres h2
+{
+	font-family: robotomedium;
+	font-size: 2.5em;
+	margin-bottom: 2px;
+}
+
+.titres .p_head 
+{
+	font-family: robotoregular;
+	font-size: 1em;
+	line-height: 1.8em;
+	margin: 15px;
+	text-align: center;
+	color: #777777;
+}
+
+/*séparateur*/
+
+.separateur
+{
+	margin: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: relative;
+}
+
+.separateur i.cir
+{
+	position: absolute;
+    z-index: 9;
+    right: calc(50% - 17px);
+   	bottom: calc(20% - 11px);
+    color: #45aed6;
+    border: 7px solid #ffffff;
+    border-radius: 100%;
+    font-size: 1em;
+}
+
+.separateur hr.hr
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    opacity: 0.2;
+    width: 120px;
+    font-size: 0.3em;
+    color: #e5e5e5;
+}
+
+.icones
+{
+   position: absolute;
+    color: #45aed6;
+    border: 2px solid #e5e5e5;
+    padding: 20px;
+    border-radius: 100%;
+    font-size: 2em;
+    top: calc(50% - 64px);
+    right: calc(100% - -25px);
+}
+
+.icones i.dot
+{
+	position: absolute;
+    right: -11px;
+    top: calc(50% - 12px);
+    color: #45aed6;
+    font-size: 14px;
+    border: 4px solid #ffffff;
+    border-radius: 100%;
+}
+
+.art1 {
+    width: 60%;
+    height: auto;
+    padding: 30px 30px 30px 0;
+    margin-right: 20px;
+    position: relative;
+}    
+
+aside img
+{
+	height: 350px;
+	width: auto;
+	float: left;
+
+}
+
+#articles
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.art1 h2
+{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    margin-top: 0px;
+    font-family: robotomedium;
+    margin-bottom: 0px;
+    font-size: 1.2em;
+    line-height: 0.3em;
+}
+
+.art1 p
+{
+	font-family: robotoregular;
+    color: #777777;
+    font-size: 0.9em;
+    line-height: 1.8em;
+    padding-bottom: 25px;
+}
+
+/* Deuxième section*/
+
+#projets
+{
+	background-image: linear-gradient(to bottom, #f5f5f5 80%, rgb(225, 209, 209));
+	width: 100%;
+	height:auto;
+}
+
+#art2 li a img
+{
+	display: none;
+}
+
+#art2 nav ul
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center; 
+	list-style-type: none;
+}
+
+#art2 nav li
+{
+	position: relative;
+	box-sizing: border-box;
+	height: 40px;
+	margin-right: 0px;
+	font-size: 0.8em;
+	font-family: robotoregular;
+	background-color:#e5e5e5;
+	color: #767a7f;
+	padding: 9px 12px 9px 12px ;
+}
+
+#art2 nav a
+{
+	font-size: 1.2em;
+    color: #333333;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+#art2 li:hover 
+{
+	background-color: #45aed6;
+	border-bottom: 3px solid #318daf;
+	
+}
+
+#art2 li:hover a
+{
+	color: #ffffff;
+
+}
+
+#art2 li a img
+{
+	width: 18px;
+	height: 12px;
+}
+
+#art2 li:hover img.fleche
+{
+	display: block;
+	position: absolute;
+	right: calc(50% - 10px);
+	top: calc(100% - 0px);	
+}
+	
+#boutong
+{
+	border-radius: 5px 0 0 5px;
+}
+
+#boutond
+{
+	border-radius: 0 5px 5px 0;
+}
+
+#portfolio
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 65px;
+}
+
+.conteneur 
+{
+	position: relative;
+	width: 270px;
+	height: 170px;
+	display: inline-block;
+	margin:20px;
+}
+
+.projets
+{
+	width: 270px;
+	height: 170px;
+	display: block;
+}
+
+.transition
+{
+	position: absolute;
+	transition: all .3s ease;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.conteneur:hover .transition
+{
+	opacity: 1;
+}
+
+.texte 
+{
+	color: #ffffff;
+    font-family: robotoregular;
+    position: absolute;
+    width: 100%;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size: 0.8em;
+    line-height: 0.8em;
+}
+
+.texte h3 
+{
+	font-family: robotobold;
+	padding-left: 12px;
+}
+
+.texte p
+{
+	padding-left: 12px;
+}
+
+a.texte  
+{
+	text-decoration: none;
+}
+
+.eye
+{
+	position: absolute;
+    top: calc(50% - 50px);
+    left: calc(84% - 10px);
+    font-size: 1.2em;
+    background-color: #45aed6;
+    padding: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 100%;
+}
+
+.transitionbas
+{
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.conteneur:hover .transitionbas
+{
+	height: 40%;
+}
+
+
+/* Troisième section*/
+
+#contact
+{
+	margin: 0px 0 40px 0;
+	position: relative;	
+	width: 100%;
+	height: auto;
+}
+
+#contact div iframe 
+{	
+	
+	width: 100%;
+    height: 640px;
+    border: none;
+	opacity: 0.8;
+	z-index: 0;
+	background-color: #45aed6;
+}
+
+#calque
+{
+	background-color: #45aed6;
+	position:absolute;
+  	content:'';
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	opacity:0.2;
+	z-index: 8;
+}
+
+#formulaire 
+{
+	position: absolute;
+	z-index: 9;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    top: 50px;
+    right: 150px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0px 20px 0px 20px;
+    font-family: robotoregular;
+}
+
+#formulaire h3
+{
+	text-align: left;
+	font-family: robotobold;
+    font-size: 1.4em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+#formulaire h4
+{
+	font-family: robotobold;
+	color: #777777;
+	font-size: 1em;
+	margin-top:5px;
+	margin-bottom: 0px;
+}
+
+#formulaire p
+{
+	font-size: 0.9em; 
+	color: #777777;
+	margin-top: 0;
+}
+
+input, textarea
+{
+	align-items: center;
+	margin-bottom: 15px;
+	border-radius: 3px;
+	border: 1px solid #999999;
+	padding: 8px;
+	font-family: robotoregular;
+	width: 280px;
+}
+ #send
+ {
+ 	width: 130px;
+ 	background-color: #45aed6;
+	padding: 8px;
+	border-bottom: 3px solid #3097be;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #ffffff;
+	font-family: robotoregular;
+	font-size: 1em;
+}
+
+/*responsive design*/
+
+@media all and (min-width: 768px) and (max-width: 1024px)
+{
+	body
+	 { 
+		width: 100%;
+	 }
+
+	 strong
+	 {
+	 	text-decoration: none;
+	 }
+	 
+	#accueil
+	{
+		flex-direction: column;
+	}
+
+	#accueil p 
+	{
+		margin-bottom: 0;
+	}
+
+	 #accueil nav ul
+	 {
+	 	width: auto;
+	 	text-align: left;
+	 	margin-bottom: 15px;
+	 }
+
+	 #accueil img
+	 {
+	 	width: 120px;
+	 	height: auto;
+	 }
+
+	 #accueil nav li 
+	 {
+	 	padding-left: 4px;
+	 }
+
+	 #accueil nav a 
+	 {
+	 	font-size: 1.1em;
+	 }
+
+	 #accueil nav a:hover
+	 {
+	 	border-bottom: 0;
+	 	border:none;
+	 }
+
+	 #accueil nav a:focus
+	 {
+	 	border:none;
+	 	color: #45aed6;
+	 }
+
+	 #banniere_image
+	 {
+	 	height: 300px;
+    	margin-top: 50px;
+    	margin-bottom: 30px;
+	 }
+
+	 #banniere_description
+
+	 {
+	 	margin-top: 70px;
+	    margin-left: 85px;
+	    width: 360px;
+	 }
+
+	 #banniere_description h1
+	 {
+	 	font-size: 1.5em;
+    	line-height: 1.6em;
+    	margin-bottom: 3%;
+	 }
+
+	 #banniere_description h3
+	 {
+	 	display: none;
+	 }
+
+	 #fleche_gauche i 
+	 {
+	 	top: 140px;
+	 }
+
+	 #fleche_droite i
+	 {
+	 	top: 140px;
+	 }
+
+/*Nos Services*/
+	 .titres
+	 {
+	 	margin-bottom: 0;
+	 	margin-top: 0;
+	 }
+
+	 .titres h2
+	 {
+	 	font-size: 1.8em;
+	 	margin-top: 0;
+	 }
+
+	 .titres p.p_head
+	 {
+	 	font-size: 1.1em;
+	    line-height: 1.6em;
+	    width: 90%;
+	 }
+
+	 #services
+	 {
+	 	display: flex;
+	 	flex-direction: column;
+	 	justify-content: flex-start;
+	 	align-items: center;
+	 	top:0;
+	 	width: 100%;
+	 	height: auto;
+	 	margin-top: 10px;
+	 }
+
+	 aside img
+	 {
+	 	
+	 	width: 300px; 
+	 	height: auto;
+	 }
+
+	 #articles
+	 {
+	 	
+    	width: 100%;
+	    
+	 }
+
+	 .icones
+	 {
+	 	top: calc(50% - 68px);
+	 }
+
+	.art1
+	 {
+	 	width: 78%;
+	 	bottom: 0;
+	 	margin-right:0px;
+	 }
+
+	 .art1 h2
+	 {
+	 	font-size: 1.4em;
+	 }
+
+	 .art1 p 
+	 {
+	 	bottom: 0px;
+	    font-size: 1.1em;
+	    line-height: 1.5em;
+	 }
+	 
+/*Nos projets*/
+	 
+	#portfolio
+	{
+		width: 100%;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    margin-right: 0;
+	    margin-left: 0;
+	    flex-wrap: wrap;
+	}
+	
+/*Contact*/
+
+	#contact div iframe
+	 {
+	 	width: 100%;
+	 	height: 300px;
+	 }
+
+	 #calque
+	 {
+	 	width: 100%;
+	 	height: 300px;
+	 }
+
+
+	  #formulaire
+	 {
+	    width: 80%;
+	    top: 320px;
+	    left: calc(20% - 35px);
+	 }
+
+	 input, textarea
+	 {
+		width: 480px;
+	 }
+
+	textarea
+	 {
+		height: 80px;
+	 }
+
+}
+
+@media all and (min-width: 320px) and (max-width: 767px)
+{
+	body
+	 { 
+		width: 100%;	
+	 }
+
+	 strong
+	 {
+	 	text-decoration: none;
+	 }
+	 
+	#accueil
+	{
+		flex-direction: column;
+	}
+
+	#accueil p 
+	{
+		margin-bottom: 0;
+	}
+
+	 #accueil nav ul
+	 {
+	 	width: auto;
+	 	text-align: left;
+	 	margin-bottom: 15px;
+	 }
+
+	 #accueil img
+	 {
+	 	width: 120px;
+	 	height: auto;
+	 }
+
+	 #accueil nav a 
+	 {
+	 	font-size: 1.1em;
+	 }
+
+	 #accueil nav a:hover
+	 {
+	 	border-bottom: 0;
+	 	border:none;
+	 }
+
+	 #accueil nav a:focus
+	 {
+	 	border:none;
+	 	color: #45aed6;
+	 }
+
+	 #banniere_image
+	 {
+	 	height: 300px;
+    	margin-top: 50px;
+    	margin-bottom: 30px;
+	 }
+
+	 #banniere_description
+
+	 {
+	 	margin-top: 90px;
+    	margin-left: 85px;
+  		width: 350px;
+	 }
+
+	 #banniere_description h1
+	 {
+	 	font-size: 1.5em;
+    	line-height: 1.6em;
+    	margin-bottom: 30px;
+	 }
+
+	 #banniere_description p
+	 {
+	 	display: none;
+	 }
+
+	 #fleche_gauche i 
+	 {
+	 	top: 140px;
+	 }
+
+	 #fleche_droite i
+	 {
+	 	top: 140px;
+	 }
+
+/*Nos Services*/
+	 .titres
+	 {
+	 	margin-bottom: 0;
+	 	margin-top: 0;
+	 }
+
+	 .titres h2
+	 {
+	 	font-size: 1.8em;
+	 	margin-top: 0;
+	 }
+
+	 .titres p.p_head
+	 {
+	 	font-size: 1.1em;
+	    line-height: 1.6em;
+	    width: 90%;
+	 }
+
+	 #services
+	 {
+	 	display: flex;
+	 	flex-direction: column;
+	 	justify-content: flex-start;
+	 	align-items: center;
+	 	top:0;
+	 	width: 100%;
+	 	height: auto;
+	 	margin-top: 10px;
+	 }
+
+	 aside img
+	 {
+	 	
+	 	width: 300px; 
+	 	height: auto;
+	 }
+
+	 #articles
+	 {
+	 	
+    	width: 100%;
+	    
+	 }
+
+	 .icones
+	 {
+	 	top: calc(50% - 90px);
+	 }
+
+	.art1
+	 {
+	 	width: 78%;
+	 	bottom: 0;
+	 	margin-right:0px;
+	 }
+
+	 .art1 h2
+	 {
+	 	font-size: 1.8em;
+	 }
+
+	 .art1 p 
+	 {
+	 	bottom: 0px;
+	    font-size: 1.3em;
+	    line-height: 1.5em;
+	 }
+	 
+/*Nos projets*/
+	 
+	#portfolio
+	{
+		width: 100%;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;
+	    margin: 65px 0 10px 0;
+	    flex-wrap: wrap;
+	}
+	
+/*Contact*/
+
+	#contact div iframe
+	 {
+	 	width: 100%;
+	 	height: 300px;
+	 }
+
+	 #calque
+	 {
+	 	width: 100%;
+	 	height: 300px;
+	 }
+
+
+	  #formulaire
+	 {
+	    width: 71%;
+	    top: 320px;
+	    left: calc(15% - 20px);
+	 }
+
+	 input, textarea
+	 {
+		width: 480px;
+	 }
+
+	textarea
+	 {
+		height: 80px;
+	 }
+
+}
